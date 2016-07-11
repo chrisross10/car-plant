@@ -2,6 +2,19 @@ namespace CarPlant
 {
 	class ToyotaCorolla : Car
 	{
+		public Wheel _frontLeft;
+		public Wheel _frontRight;
+		public Wheel _rearLeft;
+		public Wheel _rearRight;
+
+		public ToyotaCorolla()
+		{
+			_frontLeft = new Wheel("front left");
+			_frontRight = new Wheel("front right");
+			_rearLeft = new Wheel("rear left");
+			_rearRight = new Wheel("rear right");
+		}
+
 		public override string Name()
 		{
 			return "Toyota Corolla";
