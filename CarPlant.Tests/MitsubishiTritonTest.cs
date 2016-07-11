@@ -6,7 +6,7 @@ namespace CarPlant
 	[TestFixture]
 	public class MitsubishiTritonTest
 	{
-		private Car triton;
+		private ICar triton;
 
 		[SetUp]
 		public void Init()

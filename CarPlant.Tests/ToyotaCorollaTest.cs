@@ -7,7 +7,7 @@ namespace CarPlant
 	public class ToyotaCorollaTest
 	{
 
-		private Car corolla;
+		private ICar corolla;
 
 		[SetUp]
 		public void Init()

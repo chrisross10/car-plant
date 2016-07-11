@@ -1,32 +1,32 @@
 namespace CarPlant
 {
-	class MitsubishiTriton : Car
+	class MitsubishiTriton : ICar
 	{
-		private readonly FourWheelDrive _drive;
-		private readonly FrontWheelSteering _steering;
+		private readonly IDrive _drive;
+		private readonly ISteering _steering;
 
-		public MitsubishiTriton(FourWheelDrive drive, FrontWheelSteering steering)
+		public MitsubishiTriton(IDrive drive, ISteering steering)
 		{
 			_drive = drive;
 			_steering = steering;
 		}
 
-		public override string Name()
+		public virtual string Name()
 		{
 			return "Mitsubishi Triton";
 		}
 
-		public override void Accelerate(int kph)
+		public virtual void Accelerate(int kph)
 		{
 			_drive.Accelerate(kph);
 		}
 
-		public override void TurnLeft(int degrees)
+		public virtual void TurnLeft(int degrees)
 		{
 			_steering.TurnLeft(degrees);
 		}
 
-		public override void TurnRight(int degrees)
+		public virtual void TurnRight(int degrees)
 		{
 			_steering.TurnRight(degrees);
 		}

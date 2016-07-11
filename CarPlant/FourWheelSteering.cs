@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	class FourWheelSteering
+	class FourWheelSteering : ISteering
 	{
 		private readonly Wheels _wheels;
 

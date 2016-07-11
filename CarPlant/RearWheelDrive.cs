@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	class RearWheelDrive
+	class RearWheelDrive : IDrive
 	{
 		private static Wheels _wheels;
 

@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	class FrontWheelDrive
+	class FrontWheelDrive : IDrive
 	{
 		private readonly Wheels _wheels;
 

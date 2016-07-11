@@ -1,32 +1,32 @@
 namespace CarPlant
 {
-	class ToyotaCorolla : Car
+	class ToyotaCorolla : ICar
 	{
-		private readonly FrontWheelDrive _drive;
-		private readonly FrontWheelSteering _steering;
+		private readonly IDrive _drive;
+		private readonly ISteering _steering;
 
-		public ToyotaCorolla(FrontWheelDrive drive, FrontWheelSteering steering)
+		public ToyotaCorolla(IDrive drive, ISteering steering)
 		{
 			_drive = drive;
 			_steering = steering;
 		}
 
-		public override string Name()
+		public virtual string Name()
 		{
 			return "Toyota Corolla";
 		}
 
-		public override void Accelerate(int kph)
+		public virtual void Accelerate(int kph)
 		{
 			_drive.Accelerate(kph);
 		}
 
-		public override void TurnLeft(int degrees)
+		public virtual void TurnLeft(int degrees)
 		{
 			_steering.TurnLeft(degrees);
 		}
 
-		public override void TurnRight(int degrees)
+		public virtual void TurnRight(int degrees)
 		{
 			_steering.TurnRight(degrees);
 		}
