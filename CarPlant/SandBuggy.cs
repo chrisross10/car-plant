@@ -19,12 +19,16 @@ namespace CarPlant
 		{
 			_frontLeft.turnLeft(degrees);
 			_frontRight.turnLeft(degrees);
+			_rearLeft.turnRight(degrees);
+			_rearRight.turnRight(degrees);
 		}
 
 		public override void TurnRight(int degrees)
 		{
 			_frontLeft.turnRight(degrees);
 			_frontRight.turnRight(degrees);
+			_rearLeft.turnLeft(degrees);
+			_rearRight.turnLeft(degrees);
 		}
 	}
 }
