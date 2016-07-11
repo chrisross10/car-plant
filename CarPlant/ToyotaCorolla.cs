@@ -2,17 +2,11 @@ namespace CarPlant
 {
 	class ToyotaCorolla : Car
 	{
-		public Wheel _frontLeft;
-		public Wheel _frontRight;
-		public Wheel _rearLeft;
-		public Wheel _rearRight;
+		private readonly Wheels _wheels;
 
-		public ToyotaCorolla()
+		public ToyotaCorolla(Wheels wheels)
 		{
-			_frontLeft = new Wheel("front left");
-			_frontRight = new Wheel("front right");
-			_rearLeft = new Wheel("rear left");
-			_rearRight = new Wheel("rear right");
+			_wheels = wheels;
 		}
 
 		public override string Name()
@@ -22,20 +16,20 @@ namespace CarPlant
 
 		public override void Accelerate(int kph)
 		{
-			_frontLeft.rotate(kph);
-			_frontRight.rotate(kph);
+			_wheels.FrontLeft.rotate(kph);
+			_wheels.FrontRight.rotate(kph);
 		}
 
 		public override void TurnLeft(int degrees)
 		{
-			_frontLeft.turnLeft(degrees);
-			_frontRight.turnLeft(degrees);
+			_wheels.FrontLeft.turnLeft(degrees);
+			_wheels.FrontRight.turnLeft(degrees);
 		}
 
 		public override void TurnRight(int degrees)
 		{
-			_frontLeft.turnRight(degrees);
-			_frontRight.turnRight(degrees);
+			_wheels.FrontLeft.turnRight(degrees);
+			_wheels.FrontRight.turnRight(degrees);
 		}
 	}
 }
