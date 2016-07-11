@@ -2,13 +2,13 @@ namespace CarPlant
 {
 	class SandBuggyLite : Car
 	{
-		private readonly Wheels _wheels;
 		private readonly FourWheelSteering _steering;
+		private readonly RearWheelDrive _drive;
 
-		public SandBuggyLite(Wheels wheels, FourWheelSteering steering)
+		public SandBuggyLite(FourWheelSteering steering, RearWheelDrive drive)
 		{
-			_wheels = wheels;
 			_steering = steering;
+			_drive = drive;
 		}
 
 		public override string Name()
@@ -18,8 +18,7 @@ namespace CarPlant
 
 		public override void Accelerate(int kph)
 		{
-			_wheels.RearLeft.rotate(kph);
-			_wheels.RearRight.rotate(kph);
+			_drive.Accelerate(kph);
 		}
 
 		public override void TurnLeft(int degrees)
