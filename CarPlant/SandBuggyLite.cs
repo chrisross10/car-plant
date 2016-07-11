@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	public class SandBuggyLite : RearWheelDriveCar
+	public class SandBuggyLite : Car
 	{
 
 		public override string Name()

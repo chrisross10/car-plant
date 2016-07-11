@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	class ToyotaCorollaSports : RearWheelDriveCar
+	class ToyotaCorollaSports : Car
 	{
 		public override string Name()
 		{

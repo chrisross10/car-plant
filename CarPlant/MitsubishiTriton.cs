@@ -1,6 +1,6 @@
 namespace CarPlant
 {
-	class MitsubishiTriton : FourWheelDriveCar
+	class MitsubishiTriton : Car
 	{
 		public override string Name()
 		{

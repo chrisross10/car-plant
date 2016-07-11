@@ -78,11 +78,8 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="CarPlant.cs" />
-    <Compile Include="FourWheelDriveCar.cs" />
-    <Compile Include="FrontWheelDriveCar.cs" />
     <Compile Include="MitsubishiTriton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RearWheelDriveCar.cs" />
     <Compile Include="SandBuggy.cs" />
     <Compile Include="SandBuggyLite.cs" />
     <Compile Include="ToyotaCorolla.cs" />
