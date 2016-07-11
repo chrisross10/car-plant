@@ -1,0 +1,5 @@
+E:\Other\CarPlant\CarPlant\bin\Debug\CarPlant.dll
+E:\Other\CarPlant\CarPlant\bin\Debug\CarPlant.pdb
+E:\Other\CarPlant\CarPlant\obj\Debug\CarPlant.csprojResolveAssemblyReference.cache
+E:\Other\CarPlant\CarPlant\obj\Debug\CarPlant.dll
+E:\Other\CarPlant\CarPlant\obj\Debug\CarPlant.pdb

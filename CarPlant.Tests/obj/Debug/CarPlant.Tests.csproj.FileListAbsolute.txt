@@ -1,0 +1,9 @@
+E:\Other\CarPlant\CarPlant.Tests\obj\Debug\CarPlant.Tests.csprojResolveAssemblyReference.cache
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\CarPlant.Tests.dll
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\CarPlant.Tests.pdb
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\CarPlant.dll
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\nunit.framework.dll
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\CarPlant.pdb
+E:\Other\CarPlant\CarPlant.Tests\bin\Debug\nunit.framework.xml
+E:\Other\CarPlant\CarPlant.Tests\obj\Debug\CarPlant.Tests.dll
+E:\Other\CarPlant\CarPlant.Tests\obj\Debug\CarPlant.Tests.pdb
