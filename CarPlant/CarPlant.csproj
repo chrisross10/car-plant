@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="CarPlant.cs" />
+    <Compile Include="FourWheelDrive.cs" />
     <Compile Include="MitsubishiTriton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SandBuggy.cs" />

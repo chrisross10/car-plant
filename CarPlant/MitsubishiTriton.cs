@@ -3,10 +3,12 @@ namespace CarPlant
 	class MitsubishiTriton : Car
 	{
 		private readonly Wheels _wheels;
+		private readonly FourWheelDrive _drive;
 
-		public MitsubishiTriton(Wheels wheels)
+		public MitsubishiTriton(Wheels wheels, FourWheelDrive drive)
 		{
 			_wheels = wheels;
+			_drive = drive;
 		}
 
 		public override string Name()
@@ -16,10 +18,7 @@ namespace CarPlant
 
 		public override void Accelerate(int kph)
 		{
-			_wheels.FrontLeft.rotate(kph);
-			_wheels.FrontRight.rotate(kph);
-			_wheels.RearLeft.rotate(kph);
-			_wheels.RearRight.rotate(kph);
+			_drive.Accelerate(kph);
 		}
 
 		public override void TurnLeft(int degrees)
