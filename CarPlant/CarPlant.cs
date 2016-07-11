@@ -27,7 +27,7 @@ namespace CarPlant {
 
 		public static Car makeSandBuggyLite()
 		{
-			return new SandBuggyLite(MakeWheels());
+			return new SandBuggyLite(MakeWheels(), new FourWheelSteering(MakeWheels()));
 		}
 
 		private static Wheels MakeWheels()
