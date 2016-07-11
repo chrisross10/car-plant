@@ -6,5 +6,11 @@ namespace CarPlant
 		{
 			return "Toyota Corolla";
 		}
+
+		public override void Accelerate(int kph)
+		{
+			_frontLeft.rotate(kph);
+			_frontRight.rotate(kph);
+		}
 	}
 }
