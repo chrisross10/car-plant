@@ -10,4 +10,4 @@ To begin with, four of the tests are red. You need to refactor the code and get 
 
 #### Rules
 1. The test methods cannot change and must be used to verify your refactorings are sound.
-2. The Car Plant's method signatures cannot change either, but it's implentations can.
+2. The Car Plant's method signatures cannot change either, but it's implementations can.
