@@ -2,11 +2,13 @@ namespace CarPlant
 {
 	class ToyotaCorollaSports : Car
 	{
-		private readonly Wheels _wheels;
+		private readonly RearWheelDrive _drive;
+		private readonly FrontWheelSteering _steering;
 
-		public ToyotaCorollaSports(Wheels wheels)
+		public ToyotaCorollaSports(RearWheelDrive drive, FrontWheelSteering steering)
 		{
-			_wheels = wheels;
+			_drive = drive;
+			_steering = steering;
 		}
 
 		public override string Name()
@@ -16,20 +18,17 @@ namespace CarPlant
 
 		public override void Accelerate(int kph)
 		{
-			_wheels.RearLeft.rotate(kph);
-			_wheels.RearRight.rotate(kph);
+			_drive.Accelerate(kph);
 		}
 
 		public override void TurnLeft(int degrees)
 		{
-			_wheels.FrontLeft.turnLeft(degrees);
-			_wheels.FrontRight.turnLeft(degrees);
+			_steering.TurnLeft(degrees);
 		}
 
 		public override void TurnRight(int degrees)
 		{
-			_wheels.FrontLeft.turnRight(degrees);
-			_wheels.FrontRight.turnRight(degrees);
+			_steering.TurnRight(degrees);
 		}
 	}
 }
