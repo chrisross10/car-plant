@@ -80,6 +80,7 @@
     <Compile Include="CarPlant.cs" />
     <Compile Include="FourWheelDrive.cs" />
     <Compile Include="FourWheelSteering.cs" />
+    <Compile Include="FrontWheelDrive.cs" />
     <Compile Include="FrontWheelSteering.cs" />
     <Compile Include="MitsubishiTriton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

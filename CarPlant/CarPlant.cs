@@ -5,7 +5,8 @@ namespace CarPlant {
 
 		public static Car makeToyotaCorolla()
 		{
-			return new ToyotaCorolla(MakeWheels());
+			Wheels wheels = MakeWheels();
+			return new ToyotaCorolla(new FrontWheelDrive(wheels), new FrontWheelSteering(wheels));
 		}
 
 		public static Car makeToyotaCorollaSports()
@@ -27,7 +28,7 @@ namespace CarPlant {
 
 		public static Car makeSandBuggyLite()
 		{
-			Wheels wheels = MakeWheels();
+			var wheels = MakeWheels();
 			return new SandBuggyLite(new FourWheelSteering(MakeWheels()), new RearWheelDrive(wheels));
 		}
 
