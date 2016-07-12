@@ -11,7 +11,7 @@ namespace CarPlant {
 
 		public static ICar makeToyotaCorollaSports()
 		{
-			return new ToyotaCorollaSports(new RearWheelDrive(MakeWheels()), new FrontWheelSteering(MakeWheels()));
+			return new Car("Toyota Corolla sports", new RearWheelDrive(MakeWheels()), new FrontWheelSteering(MakeWheels()));
 		}
 
 		public static ICar makeMitsubishiTriton()
