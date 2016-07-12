@@ -5,8 +5,8 @@ namespace CarPlant {
 
 		public static ICar makeToyotaCorolla()
 		{
-			Wheels wheels = MakeWheels();
-			return new ToyotaCorolla(new FrontWheelDrive(wheels), new FrontWheelSteering(wheels));
+			var wheels = MakeWheels();
+			return new Car("Toyota Corolla", new FrontWheelDrive(wheels), new FrontWheelSteering(wheels));
 		}
 
 		public static ICar makeToyotaCorollaSports()
