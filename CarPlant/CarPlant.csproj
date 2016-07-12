@@ -84,7 +84,7 @@
     <Compile Include="FrontWheelSteering.cs" />
     <Compile Include="IDrive.cs" />
     <Compile Include="ISteering.cs" />
-    <Compile Include="MitsubishiTriton.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RearWheelDrive.cs" />
     <Compile Include="SandBuggy.cs" />
