@@ -29,7 +29,7 @@ namespace CarPlant {
 		public static ICar makeSandBuggyLite()
 		{
 			var wheels = MakeWheels();
-			return new SandBuggyLite(new FourWheelSteering(MakeWheels()), new RearWheelDrive(wheels));
+			return new Car("Sand Buggy Lite", new RearWheelDrive(wheels), new FourWheelSteering(MakeWheels()));
 		}
 
 		private static Wheels MakeWheels()
