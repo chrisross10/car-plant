@@ -16,8 +16,8 @@ namespace CarPlant {
 
 		public static ICar makeMitsubishiTriton()
 		{
-			Wheels wheels = MakeWheels();
-			return new MitsubishiTriton(new FourWheelDrive(wheels), new FrontWheelSteering(wheels));
+			var wheels = MakeWheels();
+			return new Car("Mitsubishi Triton", new FourWheelDrive(wheels), new FrontWheelSteering(wheels));
 		}
 
 		public static ICar makeSandBuggy()

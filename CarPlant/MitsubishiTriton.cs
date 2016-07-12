@@ -1,34 +1,36 @@
 namespace CarPlant
 {
-	class MitsubishiTriton : ICar
+	class Car : ICar
 	{
-		private readonly IDrive _drive;
-		private readonly ISteering _steering;
+		protected readonly ISteering Steering;
+		protected readonly IDrive Drive;
+		protected readonly string _name;
 
-		public MitsubishiTriton(IDrive drive, ISteering steering)
+		public Car(string name, IDrive drive, ISteering steering)
 		{
-			_drive = drive;
-			_steering = steering;
+			Steering = steering;
+			Drive = drive;
+			_name = name;
 		}
 
-		public virtual string Name()
+		public void TurnLeft(int degrees)
 		{
-			return "Mitsubishi Triton";
+			Steering.TurnLeft(degrees);
 		}
 
-		public virtual void Accelerate(int kph)
+		public void TurnRight(int degrees)
 		{
-			_drive.Accelerate(kph);
+			Steering.TurnRight(degrees);
 		}
 
-		public virtual void TurnLeft(int degrees)
+		public void Accelerate(int kph)
 		{
-			_steering.TurnLeft(degrees);
+			Drive.Accelerate(kph);
 		}
 
-		public virtual void TurnRight(int degrees)
+		public string Name()
 		{
-			_steering.TurnRight(degrees);
+			return _name;
 		}
 	}
 }
